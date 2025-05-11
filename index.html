@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt ut vero excepturi debitis sequi minus consectetur vel esse, obcaecati quasi nisi, maiores, ducimus voluptate delectus! Ducimus 
-    accusantium iusto necessitatibus!
+    
+<svg viewBox="0 0 600 300">
+  <!-- Symbol-->
+  <symbol id="s-text">
+    <text text-anchor="middle" x="50%" y="50%" dy=".35em">Hello World</text>
+  </symbol>
+  <!-- Duplicate symbols-->
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+</svg>
 </body>
 </html>
